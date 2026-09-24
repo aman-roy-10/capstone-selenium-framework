@@ -1,0 +1,6 @@
+search_term,expected_result
+top,found
+dress,found
+jeans,found
+tshirt,found
+xyzabc123nomatch,none

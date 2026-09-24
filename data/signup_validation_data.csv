@@ -1,0 +1,5 @@
+case_id,name,email,invalid_field
+missing_name,,valid.user@example.com,name
+missing_email,Test User,,email
+invalid_email_no_at,Test User,plainaddress,email
+invalid_email_no_domain,Test User,user@,email
