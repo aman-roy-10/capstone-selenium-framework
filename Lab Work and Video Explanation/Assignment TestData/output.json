@@ -1,0 +1,16 @@
+{
+    "students": [
+        {
+            "name": "Aman Roy",
+            "email": "aman@gmail.com"
+        },
+        {
+            "name": "Rahul Kumar",
+            "email": "rahul@gmail.com"
+        },
+        {
+            "name": "Priya Sharma",
+            "email": "priya@gmail.com"
+        }
+    ]
+}

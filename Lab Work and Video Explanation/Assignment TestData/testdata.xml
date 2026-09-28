@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<students>
+    <student>
+        <name>Aman Roy</name>
+        <email>aman@gmail.com</email>
+    </student>
+
+    <student>
+        <name>Rahul Kumar</name>
+        <email>rahul@gmail.com</email>
+    </student>
+
+    <student>
+        <name>Priya Sharma</name>
+        <email>priya@gmail.com</email>
+    </student>
+</students>
