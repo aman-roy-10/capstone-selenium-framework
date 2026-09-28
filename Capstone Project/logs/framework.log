@@ -1,0 +1,957 @@
+2026-09-25 00:53:12,048 | INFO    | framework.tests | START tests/test_login.py::test_login_page_loads
+2026-09-25 00:53:14,874 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 00:53:14,876 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 00:53:21,544 | INFO    | framework.tests | END   tests/test_login.py::test_login_page_loads
+2026-09-25 00:53:21,563 | INFO    | framework.tests | START tests/test_login.py::test_invalid_login_shows_error[wrong.user@example.com]
+2026-09-25 00:53:23,926 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 00:53:23,930 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 00:53:28,291 | INFO    | framework.LoginPage | Type 'wrong.user@example.com' into input[data-qa='login-email']
+2026-09-25 00:53:28,447 | INFO    | framework.LoginPage | Type '****' into input[data-qa='login-password']
+2026-09-25 00:53:28,588 | INFO    | framework.LoginPage | Click button[data-qa='login-button']
+2026-09-25 00:53:31,970 | INFO    | framework.tests | END   tests/test_login.py::test_invalid_login_shows_error[wrong.user@example.com]
+2026-09-25 00:53:31,975 | INFO    | framework.tests | START tests/test_login.py::test_invalid_login_shows_error[fake.person@test.com]
+2026-09-25 00:53:34,275 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 00:53:34,277 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 00:53:38,553 | INFO    | framework.LoginPage | Type 'fake.person@test.com' into input[data-qa='login-email']
+2026-09-25 00:53:38,698 | INFO    | framework.LoginPage | Type '****' into input[data-qa='login-password']
+2026-09-25 00:53:38,838 | INFO    | framework.LoginPage | Click button[data-qa='login-button']
+2026-09-25 00:53:42,334 | INFO    | framework.tests | END   tests/test_login.py::test_invalid_login_shows_error[fake.person@test.com]
+2026-09-25 00:53:42,341 | INFO    | framework.tests | START tests/test_login.py::test_valid_login_and_logout
+2026-09-25 00:53:44,773 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 00:53:44,774 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 00:53:48,985 | INFO    | framework.LoginPage | Type 'Capstone Tester' into input[data-qa='signup-name']
+2026-09-25 00:53:49,183 | INFO    | framework.LoginPage | Type 'capstone.8158e67b0a@example.com' into input[data-qa='signup-email']
+2026-09-25 00:53:49,326 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-25 00:53:50,558 | INFO    | framework.SignupPage | Type '****' into password
+2026-09-25 00:53:51,080 | INFO    | framework.SignupPage | Type 'Capstone' into first_name
+2026-09-25 00:53:51,228 | INFO    | framework.SignupPage | Type 'Tester' into last_name
+2026-09-25 00:53:51,380 | INFO    | framework.SignupPage | Type '1 Test Street' into address1
+2026-09-25 00:53:51,675 | INFO    | framework.SignupPage | Type 'West Bengal' into state
+2026-09-25 00:53:51,858 | INFO    | framework.SignupPage | Type 'Kolkata' into city
+2026-09-25 00:53:52,543 | INFO    | framework.SignupPage | Type '700001' into zipcode
+2026-09-25 00:53:52,748 | INFO    | framework.SignupPage | Type '9999999999' into mobile_number
+2026-09-25 00:53:52,952 | INFO    | framework.SignupPage | Click button[data-qa='create-account']
+2026-09-25 00:53:55,927 | INFO    | framework.SignupPage | Click a[data-qa='continue-button']
+2026-09-25 00:53:56,885 | INFO    | framework.HomePage | Click a[href='/logout']
+2026-09-25 00:53:58,908 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 00:54:01,950 | INFO    | framework.LoginPage | Type 'capstone.8158e67b0a@example.com' into input[data-qa='login-email']
+2026-09-25 00:54:02,124 | INFO    | framework.LoginPage | Type '****' into input[data-qa='login-password']
+2026-09-25 00:54:02,320 | INFO    | framework.LoginPage | Click button[data-qa='login-button']
+2026-09-25 00:54:03,863 | INFO    | framework.HomePage | Click a[href='/logout']
+2026-09-25 00:54:05,136 | INFO    | framework.HomePage | Open https://automationexercise.com/
+2026-09-25 00:54:07,921 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 00:54:10,745 | INFO    | framework.LoginPage | Type 'capstone.8158e67b0a@example.com' into input[data-qa='login-email']
+2026-09-25 00:54:10,943 | INFO    | framework.LoginPage | Type '****' into input[data-qa='login-password']
+2026-09-25 00:54:11,147 | INFO    | framework.LoginPage | Click button[data-qa='login-button']
+2026-09-25 00:54:12,875 | INFO    | framework.HomePage | Click a[href='/delete_account']
+2026-09-25 00:54:15,376 | INFO    | framework.HomePage | Click a[data-qa='continue-button']
+2026-09-25 00:54:16,088 | INFO    | framework.tests | Deleted test account capstone.8158e67b0a@example.com
+2026-09-25 00:54:18,346 | INFO    | framework.tests | END   tests/test_login.py::test_valid_login_and_logout
+2026-09-25 00:54:18,353 | INFO    | framework.tests | START tests/test_search.py::test_product_search[top]
+2026-09-25 00:54:20,803 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 00:54:20,807 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-25 00:54:25,207 | INFO    | framework.SearchPage | Type 'top' into search_product
+2026-09-25 00:54:25,410 | INFO    | framework.SearchPage | Click submit_search
+2026-09-25 00:54:27,348 | INFO    | framework.SearchPage | Search returned 14 product(s)
+2026-09-25 00:54:29,538 | INFO    | framework.tests | END   tests/test_search.py::test_product_search[top]
+2026-09-25 00:54:29,542 | INFO    | framework.tests | START tests/test_search.py::test_product_search[dress]
+2026-09-25 00:54:31,625 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 00:54:31,628 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-25 00:54:35,543 | INFO    | framework.SearchPage | Type 'dress' into search_product
+2026-09-25 00:54:35,708 | INFO    | framework.SearchPage | Click submit_search
+2026-09-25 00:54:37,642 | INFO    | framework.SearchPage | Search returned 9 product(s)
+2026-09-25 00:54:39,778 | INFO    | framework.tests | END   tests/test_search.py::test_product_search[dress]
+2026-09-25 00:54:39,779 | INFO    | framework.tests | START tests/test_search.py::test_product_search[jeans]
+2026-09-25 00:54:41,227 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 00:54:41,228 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-25 00:54:45,241 | INFO    | framework.SearchPage | Type 'jeans' into search_product
+2026-09-25 00:54:45,300 | INFO    | framework.SearchPage | Click submit_search
+2026-09-25 00:54:47,404 | INFO    | framework.SearchPage | Search returned 3 product(s)
+2026-09-25 00:54:49,524 | INFO    | framework.tests | END   tests/test_search.py::test_product_search[jeans]
+2026-09-25 00:54:49,525 | INFO    | framework.tests | START tests/test_search.py::test_product_search[tshirt]
+2026-09-25 00:54:50,881 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 00:54:50,882 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-25 00:54:54,226 | INFO    | framework.SearchPage | Type 'tshirt' into search_product
+2026-09-25 00:54:54,360 | INFO    | framework.SearchPage | Click submit_search
+2026-09-25 00:54:56,530 | INFO    | framework.SearchPage | Search returned 6 product(s)
+2026-09-25 00:54:58,648 | INFO    | framework.tests | END   tests/test_search.py::test_product_search[tshirt]
+2026-09-25 00:54:58,649 | INFO    | framework.tests | START tests/test_search.py::test_product_search[xyzabc123nomatch]
+2026-09-25 00:55:00,055 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 00:55:00,056 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-25 00:55:03,205 | INFO    | framework.SearchPage | Type 'xyzabc123nomatch' into search_product
+2026-09-25 00:55:03,337 | INFO    | framework.SearchPage | Click submit_search
+2026-09-25 00:55:04,958 | INFO    | framework.SearchPage | Search returned 0 product(s)
+2026-09-25 00:55:07,095 | INFO    | framework.tests | END   tests/test_search.py::test_product_search[xyzabc123nomatch]
+2026-09-25 00:55:07,096 | INFO    | framework.tests | START tests/test_signup.py::test_new_user_signup_form[royaman1005@gmail.com]
+2026-09-25 00:55:08,552 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 00:55:08,553 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 00:55:12,404 | INFO    | framework.LoginPage | Type 'Capstone Tester' into input[data-qa='signup-name']
+2026-09-25 00:55:12,482 | INFO    | framework.LoginPage | Type 'royaman1005@gmail.com' into input[data-qa='signup-email']
+2026-09-25 00:55:12,536 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-25 00:55:13,261 | ERROR   | framework.tests | FAILED tests/test_signup.py::test_new_user_signup_form[royaman1005@gmail.com] (call) - screenshot: C:\Users\amanr\capstone-selenium-framework\screenshots\test_new_user_signup_form_royaman1005_gmail.com__20260925_005513.png
+2026-09-25 00:55:15,433 | INFO    | framework.tests | END   tests/test_signup.py::test_new_user_signup_form[royaman1005@gmail.com]
+2026-09-25 00:55:15,435 | INFO    | framework.tests | START tests/test_signup.py::test_duplicate_signup_shows_error
+2026-09-25 00:55:16,794 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 00:55:16,794 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 00:55:21,411 | INFO    | framework.LoginPage | Type 'Capstone Tester' into input[data-qa='signup-name']
+2026-09-25 00:55:21,526 | INFO    | framework.LoginPage | Type 'capstone.486acb3a27@example.com' into input[data-qa='signup-email']
+2026-09-25 00:55:21,592 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-25 00:55:22,954 | INFO    | framework.SignupPage | Type '****' into password
+2026-09-25 00:55:23,131 | INFO    | framework.SignupPage | Type 'Capstone' into first_name
+2026-09-25 00:55:23,183 | INFO    | framework.SignupPage | Type 'Tester' into last_name
+2026-09-25 00:55:23,244 | INFO    | framework.SignupPage | Type '1 Test Street' into address1
+2026-09-25 00:55:23,349 | INFO    | framework.SignupPage | Type 'West Bengal' into state
+2026-09-25 00:55:23,412 | INFO    | framework.SignupPage | Type 'Kolkata' into city
+2026-09-25 00:55:23,487 | INFO    | framework.SignupPage | Type '700001' into zipcode
+2026-09-25 00:55:23,543 | INFO    | framework.SignupPage | Type '9999999999' into mobile_number
+2026-09-25 00:55:23,604 | INFO    | framework.SignupPage | Click button[data-qa='create-account']
+2026-09-25 00:55:24,898 | INFO    | framework.SignupPage | Click a[data-qa='continue-button']
+2026-09-25 00:55:25,703 | INFO    | framework.HomePage | Click a[href='/logout']
+2026-09-25 00:55:28,663 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 00:55:31,308 | INFO    | framework.LoginPage | Type 'Capstone Tester' into input[data-qa='signup-name']
+2026-09-25 00:55:31,359 | INFO    | framework.LoginPage | Type 'capstone.486acb3a27@example.com' into input[data-qa='signup-email']
+2026-09-25 00:55:31,415 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-25 00:55:31,998 | INFO    | framework.HomePage | Open https://automationexercise.com/
+2026-09-25 00:55:34,635 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 00:55:37,207 | INFO    | framework.LoginPage | Type 'capstone.486acb3a27@example.com' into input[data-qa='login-email']
+2026-09-25 00:55:37,278 | INFO    | framework.LoginPage | Type '****' into input[data-qa='login-password']
+2026-09-25 00:55:37,346 | INFO    | framework.LoginPage | Click button[data-qa='login-button']
+2026-09-25 00:55:38,817 | INFO    | framework.HomePage | Click a[href='/delete_account']
+2026-09-25 00:55:39,646 | INFO    | framework.HomePage | Click a[data-qa='continue-button']
+2026-09-25 00:55:40,405 | INFO    | framework.tests | Deleted test account capstone.486acb3a27@example.com
+2026-09-25 00:55:42,710 | INFO    | framework.tests | END   tests/test_signup.py::test_duplicate_signup_shows_error
+2026-09-25 00:55:42,712 | INFO    | framework.tests | START tests/test_signup.py::test_signup_validation[missing_name]
+2026-09-25 00:55:44,931 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 00:55:44,932 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 00:55:48,346 | INFO    | framework.LoginPage | Type '' into input[data-qa='signup-name']
+2026-09-25 00:55:48,377 | INFO    | framework.LoginPage | Type 'valid.user@example.com' into input[data-qa='signup-email']
+2026-09-25 00:55:48,428 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-25 00:55:50,622 | INFO    | framework.tests | END   tests/test_signup.py::test_signup_validation[missing_name]
+2026-09-25 00:55:50,623 | INFO    | framework.tests | START tests/test_signup.py::test_signup_validation[missing_email]
+2026-09-25 00:55:51,994 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 00:55:51,995 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 00:55:56,104 | INFO    | framework.LoginPage | Type 'Test User' into input[data-qa='signup-name']
+2026-09-25 00:55:56,172 | INFO    | framework.LoginPage | Type '' into input[data-qa='signup-email']
+2026-09-25 00:55:56,194 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-25 00:55:58,380 | INFO    | framework.tests | END   tests/test_signup.py::test_signup_validation[missing_email]
+2026-09-25 00:55:58,381 | INFO    | framework.tests | START tests/test_signup.py::test_signup_validation[invalid_email_no_at]
+2026-09-25 00:55:59,760 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 00:55:59,761 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 00:56:03,622 | INFO    | framework.LoginPage | Type 'Test User' into input[data-qa='signup-name']
+2026-09-25 00:56:03,685 | INFO    | framework.LoginPage | Type 'plainaddress' into input[data-qa='signup-email']
+2026-09-25 00:56:03,740 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-25 00:56:05,922 | INFO    | framework.tests | END   tests/test_signup.py::test_signup_validation[invalid_email_no_at]
+2026-09-25 00:56:05,923 | INFO    | framework.tests | START tests/test_signup.py::test_signup_validation[invalid_email_no_domain]
+2026-09-25 00:56:07,296 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 00:56:07,299 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 00:56:11,397 | INFO    | framework.LoginPage | Type 'Test User' into input[data-qa='signup-name']
+2026-09-25 00:56:11,466 | INFO    | framework.LoginPage | Type 'user@' into input[data-qa='signup-email']
+2026-09-25 00:56:11,518 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-25 00:56:13,731 | INFO    | framework.tests | END   tests/test_signup.py::test_signup_validation[invalid_email_no_domain]
+2026-09-25 00:56:32,875 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 00:56:32,875 | INFO    | framework.unittest | START legacy_unittest.test_login_unittest.LoginUnittest.test_invalid_login_shows_error
+2026-09-25 00:56:32,875 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 00:56:36,454 | INFO    | framework.LoginPage | Type 'wrong.user@example.com' into input[data-qa='login-email']
+2026-09-25 00:56:36,614 | INFO    | framework.LoginPage | Type '****' into input[data-qa='login-password']
+2026-09-25 00:56:36,673 | INFO    | framework.LoginPage | Click button[data-qa='login-button']
+2026-09-25 00:56:37,235 | INFO    | framework.unittest | END   legacy_unittest.test_login_unittest.LoginUnittest.test_invalid_login_shows_error
+2026-09-25 00:56:37,235 | INFO    | framework.unittest | START legacy_unittest.test_login_unittest.LoginUnittest.test_login_page_loads
+2026-09-25 00:56:37,235 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 00:56:39,782 | INFO    | framework.unittest | END   legacy_unittest.test_login_unittest.LoginUnittest.test_login_page_loads
+2026-09-25 00:56:43,301 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 00:56:43,301 | INFO    | framework.unittest | START legacy_unittest.test_search_unittest.SearchUnittest.test_search_returns_results
+2026-09-25 00:56:43,301 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-25 00:56:47,011 | INFO    | framework.SearchPage | Type 'top' into search_product
+2026-09-25 00:56:47,097 | INFO    | framework.SearchPage | Click submit_search
+2026-09-25 00:56:48,673 | INFO    | framework.SearchPage | Search returned 14 product(s)
+2026-09-25 00:56:48,674 | INFO    | framework.unittest | END   legacy_unittest.test_search_unittest.SearchUnittest.test_search_returns_results
+2026-09-25 00:56:48,674 | INFO    | framework.unittest | START legacy_unittest.test_search_unittest.SearchUnittest.test_search_with_no_match_returns_zero
+2026-09-25 00:56:48,674 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-25 00:56:51,235 | INFO    | framework.SearchPage | Type 'xyzabc123nomatch' into search_product
+2026-09-25 00:56:51,294 | INFO    | framework.SearchPage | Click submit_search
+2026-09-25 00:56:52,861 | INFO    | framework.SearchPage | Search returned 0 product(s)
+2026-09-25 00:56:52,861 | INFO    | framework.unittest | END   legacy_unittest.test_search_unittest.SearchUnittest.test_search_with_no_match_returns_zero
+2026-09-25 01:00:23,083 | INFO    | framework.tests | START tests/test_signup.py::test_new_user_signup_form[roya.man1005@gmail.com]
+2026-09-25 01:00:24,874 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:00:24,875 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:00:29,863 | INFO    | framework.LoginPage | Type 'Capstone Tester' into input[data-qa='signup-name']
+2026-09-25 01:00:29,942 | INFO    | framework.LoginPage | Type 'roya.man1005@gmail.com' into input[data-qa='signup-email']
+2026-09-25 01:00:29,995 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-25 01:00:33,162 | INFO    | framework.tests | END   tests/test_signup.py::test_new_user_signup_form[roya.man1005@gmail.com]
+2026-09-25 01:01:30,851 | INFO    | framework.tests | START tests/test_signup.py::test_new_user_signup_form[roya.man1005@gmail.com]
+2026-09-25 01:01:32,365 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:01:32,366 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:01:36,198 | INFO    | framework.LoginPage | Type 'Capstone Tester' into input[data-qa='signup-name']
+2026-09-25 01:01:36,271 | INFO    | framework.LoginPage | Type 'roya.man1005@gmail.com' into input[data-qa='signup-email']
+2026-09-25 01:01:36,324 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-25 01:01:38,973 | INFO    | framework.tests | END   tests/test_signup.py::test_new_user_signup_form[roya.man1005@gmail.com]
+2026-09-25 01:03:21,905 | INFO    | framework.tests | START tests/test_login.py::test_login_page_loads
+2026-09-25 01:03:23,419 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:03:23,421 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:03:29,495 | INFO    | framework.tests | END   tests/test_login.py::test_login_page_loads
+2026-09-25 01:03:29,496 | INFO    | framework.tests | START tests/test_login.py::test_invalid_login_shows_error[wrong.user@example.com]
+2026-09-25 01:03:30,878 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:03:30,879 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:03:34,818 | INFO    | framework.LoginPage | Type 'wrong.user@example.com' into input[data-qa='login-email']
+2026-09-25 01:03:34,876 | INFO    | framework.LoginPage | Type '****' into input[data-qa='login-password']
+2026-09-25 01:03:34,920 | INFO    | framework.LoginPage | Click button[data-qa='login-button']
+2026-09-25 01:03:38,246 | INFO    | framework.tests | END   tests/test_login.py::test_invalid_login_shows_error[wrong.user@example.com]
+2026-09-25 01:03:38,247 | INFO    | framework.tests | START tests/test_login.py::test_invalid_login_shows_error[fake.person@test.com]
+2026-09-25 01:03:39,628 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:03:39,630 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:03:43,632 | INFO    | framework.LoginPage | Type 'fake.person@test.com' into input[data-qa='login-email']
+2026-09-25 01:03:43,689 | INFO    | framework.LoginPage | Type '****' into input[data-qa='login-password']
+2026-09-25 01:03:43,732 | INFO    | framework.LoginPage | Click button[data-qa='login-button']
+2026-09-25 01:03:46,831 | INFO    | framework.tests | END   tests/test_login.py::test_invalid_login_shows_error[fake.person@test.com]
+2026-09-25 01:03:46,832 | INFO    | framework.tests | START tests/test_login.py::test_valid_login_and_logout
+2026-09-25 01:03:48,177 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:03:48,177 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:03:52,165 | INFO    | framework.LoginPage | Type 'Capstone Tester' into input[data-qa='signup-name']
+2026-09-25 01:03:52,230 | INFO    | framework.LoginPage | Type 'capstone.bd42255348@example.com' into input[data-qa='signup-email']
+2026-09-25 01:03:52,286 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-25 01:03:53,409 | INFO    | framework.SignupPage | Type '****' into password
+2026-09-25 01:03:53,592 | INFO    | framework.SignupPage | Type 'Capstone' into first_name
+2026-09-25 01:03:53,646 | INFO    | framework.SignupPage | Type 'Tester' into last_name
+2026-09-25 01:03:53,705 | INFO    | framework.SignupPage | Type '1 Test Street' into address1
+2026-09-25 01:03:53,809 | INFO    | framework.SignupPage | Type 'West Bengal' into state
+2026-09-25 01:03:53,871 | INFO    | framework.SignupPage | Type 'Kolkata' into city
+2026-09-25 01:03:53,936 | INFO    | framework.SignupPage | Type '700001' into zipcode
+2026-09-25 01:03:54,026 | INFO    | framework.SignupPage | Type '9999999999' into mobile_number
+2026-09-25 01:03:54,087 | INFO    | framework.SignupPage | Click button[data-qa='create-account']
+2026-09-25 01:03:55,321 | INFO    | framework.SignupPage | Click a[data-qa='continue-button']
+2026-09-25 01:03:56,075 | INFO    | framework.HomePage | Click a[href='/logout']
+2026-09-25 01:03:57,717 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:04:00,291 | INFO    | framework.LoginPage | Type 'capstone.bd42255348@example.com' into input[data-qa='login-email']
+2026-09-25 01:04:00,345 | INFO    | framework.LoginPage | Type '****' into input[data-qa='login-password']
+2026-09-25 01:04:00,394 | INFO    | framework.LoginPage | Click button[data-qa='login-button']
+2026-09-25 01:04:01,825 | INFO    | framework.HomePage | Click a[href='/logout']
+2026-09-25 01:04:02,896 | INFO    | framework.HomePage | Open https://automationexercise.com/
+2026-09-25 01:04:05,473 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:04:08,052 | INFO    | framework.LoginPage | Type 'capstone.bd42255348@example.com' into input[data-qa='login-email']
+2026-09-25 01:04:08,103 | INFO    | framework.LoginPage | Type '****' into input[data-qa='login-password']
+2026-09-25 01:04:08,164 | INFO    | framework.LoginPage | Click button[data-qa='login-button']
+2026-09-25 01:04:09,777 | INFO    | framework.HomePage | Click a[href='/delete_account']
+2026-09-25 01:04:10,631 | INFO    | framework.HomePage | Click a[data-qa='continue-button']
+2026-09-25 01:04:11,190 | INFO    | framework.tests | Deleted test account capstone.bd42255348@example.com
+2026-09-25 01:04:13,370 | INFO    | framework.tests | END   tests/test_login.py::test_valid_login_and_logout
+2026-09-25 01:04:13,371 | INFO    | framework.tests | START tests/test_search.py::test_product_search[top]
+2026-09-25 01:04:14,717 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:04:14,719 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-25 01:04:19,311 | INFO    | framework.SearchPage | Type 'top' into search_product
+2026-09-25 01:04:19,370 | INFO    | framework.SearchPage | Click submit_search
+2026-09-25 01:04:20,976 | INFO    | framework.SearchPage | Search returned 14 product(s)
+2026-09-25 01:04:23,086 | INFO    | framework.tests | END   tests/test_search.py::test_product_search[top]
+2026-09-25 01:04:23,087 | INFO    | framework.tests | START tests/test_search.py::test_product_search[dress]
+2026-09-25 01:04:24,484 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:04:24,486 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-25 01:04:28,469 | INFO    | framework.SearchPage | Type 'dress' into search_product
+2026-09-25 01:04:28,533 | INFO    | framework.SearchPage | Click submit_search
+2026-09-25 01:04:30,094 | INFO    | framework.SearchPage | Search returned 9 product(s)
+2026-09-25 01:04:32,225 | INFO    | framework.tests | END   tests/test_search.py::test_product_search[dress]
+2026-09-25 01:04:32,226 | INFO    | framework.tests | START tests/test_search.py::test_product_search[jeans]
+2026-09-25 01:04:33,588 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:04:33,589 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-25 01:04:37,910 | INFO    | framework.SearchPage | Type 'jeans' into search_product
+2026-09-25 01:04:37,992 | INFO    | framework.SearchPage | Click submit_search
+2026-09-25 01:04:40,128 | INFO    | framework.SearchPage | Search returned 3 product(s)
+2026-09-25 01:04:42,260 | INFO    | framework.tests | END   tests/test_search.py::test_product_search[jeans]
+2026-09-25 01:04:42,261 | INFO    | framework.tests | START tests/test_search.py::test_product_search[tshirt]
+2026-09-25 01:04:43,779 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:04:43,780 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-25 01:04:47,982 | INFO    | framework.SearchPage | Type 'tshirt' into search_product
+2026-09-25 01:04:48,047 | INFO    | framework.SearchPage | Click submit_search
+2026-09-25 01:04:50,148 | INFO    | framework.SearchPage | Search returned 6 product(s)
+2026-09-25 01:04:52,252 | INFO    | framework.tests | END   tests/test_search.py::test_product_search[tshirt]
+2026-09-25 01:04:52,253 | INFO    | framework.tests | START tests/test_search.py::test_product_search[xyzabc123nomatch]
+2026-09-25 01:04:53,618 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:04:53,619 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-25 01:04:57,427 | INFO    | framework.SearchPage | Type 'xyzabc123nomatch' into search_product
+2026-09-25 01:04:57,497 | INFO    | framework.SearchPage | Click submit_search
+2026-09-25 01:04:59,157 | INFO    | framework.SearchPage | Search returned 0 product(s)
+2026-09-25 01:05:01,280 | INFO    | framework.tests | END   tests/test_search.py::test_product_search[xyzabc123nomatch]
+2026-09-25 01:05:01,281 | INFO    | framework.tests | START tests/test_signup.py::test_new_user_signup_form[roya.man1005@gmail.com]
+2026-09-25 01:05:02,618 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:05:02,619 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:05:06,795 | INFO    | framework.LoginPage | Type 'Capstone Tester' into input[data-qa='signup-name']
+2026-09-25 01:05:06,865 | INFO    | framework.LoginPage | Type 'roya.man1005@gmail.com' into input[data-qa='signup-email']
+2026-09-25 01:05:06,915 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-25 01:05:10,025 | INFO    | framework.tests | END   tests/test_signup.py::test_new_user_signup_form[roya.man1005@gmail.com]
+2026-09-25 01:05:10,026 | INFO    | framework.tests | START tests/test_signup.py::test_duplicate_signup_shows_error
+2026-09-25 01:05:11,403 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:05:11,404 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:05:14,696 | INFO    | framework.LoginPage | Type 'Capstone Tester' into input[data-qa='signup-name']
+2026-09-25 01:05:14,761 | INFO    | framework.LoginPage | Type 'capstone.7e81d17f3c@example.com' into input[data-qa='signup-email']
+2026-09-25 01:05:14,815 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-25 01:05:16,071 | ERROR   | framework.tests | FAILED tests/test_signup.py::test_duplicate_signup_shows_error (setup) - screenshot: C:\Users\amanr\capstone-selenium-framework\screenshots\test_duplicate_signup_shows_error_20260925_010516.png
+2026-09-25 01:05:18,226 | INFO    | framework.tests | END   tests/test_signup.py::test_duplicate_signup_shows_error
+2026-09-25 01:05:18,228 | INFO    | framework.tests | START tests/test_signup.py::test_signup_validation[missing_name]
+2026-09-25 01:05:19,609 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:05:19,610 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:05:23,759 | INFO    | framework.LoginPage | Type '' into input[data-qa='signup-name']
+2026-09-25 01:05:23,804 | INFO    | framework.LoginPage | Type 'valid.user@example.com' into input[data-qa='signup-email']
+2026-09-25 01:05:23,867 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-25 01:05:26,095 | INFO    | framework.tests | END   tests/test_signup.py::test_signup_validation[missing_name]
+2026-09-25 01:05:26,096 | INFO    | framework.tests | START tests/test_signup.py::test_signup_validation[missing_email]
+2026-09-25 01:05:27,482 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:05:27,483 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:05:31,524 | INFO    | framework.LoginPage | Type 'Test User' into input[data-qa='signup-name']
+2026-09-25 01:05:31,593 | INFO    | framework.LoginPage | Type '' into input[data-qa='signup-email']
+2026-09-25 01:05:31,616 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-25 01:05:33,787 | INFO    | framework.tests | END   tests/test_signup.py::test_signup_validation[missing_email]
+2026-09-25 01:05:33,788 | INFO    | framework.tests | START tests/test_signup.py::test_signup_validation[invalid_email_no_at]
+2026-09-25 01:05:35,144 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:05:35,145 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:05:39,112 | INFO    | framework.LoginPage | Type 'Test User' into input[data-qa='signup-name']
+2026-09-25 01:05:39,268 | INFO    | framework.LoginPage | Type 'plainaddress' into input[data-qa='signup-email']
+2026-09-25 01:05:39,350 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-25 01:05:41,630 | INFO    | framework.tests | END   tests/test_signup.py::test_signup_validation[invalid_email_no_at]
+2026-09-25 01:05:41,631 | INFO    | framework.tests | START tests/test_signup.py::test_signup_validation[invalid_email_no_domain]
+2026-09-25 01:05:43,001 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:05:43,002 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:05:47,027 | INFO    | framework.LoginPage | Type 'Test User' into input[data-qa='signup-name']
+2026-09-25 01:05:47,100 | INFO    | framework.LoginPage | Type 'user@' into input[data-qa='signup-email']
+2026-09-25 01:05:47,146 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-25 01:05:49,345 | INFO    | framework.tests | END   tests/test_signup.py::test_signup_validation[invalid_email_no_domain]
+2026-09-25 01:08:02,137 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:08:02,137 | INFO    | framework.unittest | START legacy_unittest.test_login_unittest.LoginUnittest.test_invalid_login_shows_error
+2026-09-25 01:08:02,137 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:08:05,868 | INFO    | framework.LoginPage | Type 'wrong.user@example.com' into input[data-qa='login-email']
+2026-09-25 01:08:05,935 | INFO    | framework.LoginPage | Type '****' into input[data-qa='login-password']
+2026-09-25 01:08:05,986 | INFO    | framework.LoginPage | Click button[data-qa='login-button']
+2026-09-25 01:08:06,506 | INFO    | framework.unittest | END   legacy_unittest.test_login_unittest.LoginUnittest.test_invalid_login_shows_error
+2026-09-25 01:08:06,506 | INFO    | framework.unittest | START legacy_unittest.test_login_unittest.LoginUnittest.test_login_page_loads
+2026-09-25 01:08:06,506 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:08:09,059 | INFO    | framework.unittest | END   legacy_unittest.test_login_unittest.LoginUnittest.test_login_page_loads
+2026-09-25 01:08:12,556 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:08:12,556 | INFO    | framework.unittest | START legacy_unittest.test_search_unittest.SearchUnittest.test_search_returns_results
+2026-09-25 01:08:12,556 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-25 01:08:16,359 | INFO    | framework.SearchPage | Type 'top' into search_product
+2026-09-25 01:08:16,449 | INFO    | framework.SearchPage | Click submit_search
+2026-09-25 01:08:18,026 | INFO    | framework.SearchPage | Search returned 14 product(s)
+2026-09-25 01:08:18,026 | INFO    | framework.unittest | END   legacy_unittest.test_search_unittest.SearchUnittest.test_search_returns_results
+2026-09-25 01:08:18,026 | INFO    | framework.unittest | START legacy_unittest.test_search_unittest.SearchUnittest.test_search_with_no_match_returns_zero
+2026-09-25 01:08:18,026 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-25 01:08:20,575 | INFO    | framework.SearchPage | Type 'xyzabc123nomatch' into search_product
+2026-09-25 01:08:20,638 | INFO    | framework.SearchPage | Click submit_search
+2026-09-25 01:08:22,224 | INFO    | framework.SearchPage | Search returned 0 product(s)
+2026-09-25 01:08:22,224 | INFO    | framework.unittest | END   legacy_unittest.test_search_unittest.SearchUnittest.test_search_with_no_match_returns_zero
+2026-09-25 01:09:52,044 | INFO    | framework.tests | START tests/test_login.py::test_login_page_loads
+2026-09-25 01:09:53,557 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:09:53,558 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:09:59,735 | INFO    | framework.tests | END   tests/test_login.py::test_login_page_loads
+2026-09-25 01:09:59,736 | INFO    | framework.tests | START tests/test_login.py::test_invalid_login_shows_error[wrong.user@example.com]
+2026-09-25 01:10:01,124 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:10:01,125 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:10:05,353 | INFO    | framework.LoginPage | Type 'wrong.user@example.com' into input[data-qa='login-email']
+2026-09-25 01:10:05,415 | INFO    | framework.LoginPage | Type '****' into input[data-qa='login-password']
+2026-09-25 01:10:05,467 | INFO    | framework.LoginPage | Click button[data-qa='login-button']
+2026-09-25 01:10:08,896 | INFO    | framework.tests | END   tests/test_login.py::test_invalid_login_shows_error[wrong.user@example.com]
+2026-09-25 01:10:08,897 | INFO    | framework.tests | START tests/test_login.py::test_invalid_login_shows_error[fake.person@test.com]
+2026-09-25 01:10:10,265 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:10:10,265 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:10:14,051 | INFO    | framework.LoginPage | Type 'fake.person@test.com' into input[data-qa='login-email']
+2026-09-25 01:10:14,152 | INFO    | framework.LoginPage | Type '****' into input[data-qa='login-password']
+2026-09-25 01:10:14,198 | INFO    | framework.LoginPage | Click button[data-qa='login-button']
+2026-09-25 01:10:17,383 | INFO    | framework.tests | END   tests/test_login.py::test_invalid_login_shows_error[fake.person@test.com]
+2026-09-25 01:10:17,384 | INFO    | framework.tests | START tests/test_login.py::test_valid_login_and_logout
+2026-09-25 01:10:18,759 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:10:18,760 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:10:22,603 | INFO    | framework.LoginPage | Type 'Capstone Tester' into input[data-qa='signup-name']
+2026-09-25 01:10:22,668 | INFO    | framework.LoginPage | Type 'capstone.71ffa082f1@example.com' into input[data-qa='signup-email']
+2026-09-25 01:10:22,725 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-25 01:10:23,825 | INFO    | framework.SignupPage | Type '****' into password
+2026-09-25 01:10:24,002 | INFO    | framework.SignupPage | Type 'Capstone' into first_name
+2026-09-25 01:10:24,058 | INFO    | framework.SignupPage | Type 'Tester' into last_name
+2026-09-25 01:10:24,116 | INFO    | framework.SignupPage | Type '1 Test Street' into address1
+2026-09-25 01:10:24,221 | INFO    | framework.SignupPage | Type 'West Bengal' into state
+2026-09-25 01:10:24,303 | INFO    | framework.SignupPage | Type 'Kolkata' into city
+2026-09-25 01:10:24,407 | INFO    | framework.SignupPage | Type '700001' into zipcode
+2026-09-25 01:10:24,501 | INFO    | framework.SignupPage | Type '9999999999' into mobile_number
+2026-09-25 01:10:24,689 | INFO    | framework.SignupPage | Click button[data-qa='create-account']
+2026-09-25 01:10:26,015 | INFO    | framework.SignupPage | Click a[data-qa='continue-button']
+2026-09-25 01:10:26,787 | INFO    | framework.HomePage | Click a[href='/logout']
+2026-09-25 01:10:28,273 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:10:30,778 | INFO    | framework.LoginPage | Type 'capstone.71ffa082f1@example.com' into input[data-qa='login-email']
+2026-09-25 01:10:30,841 | INFO    | framework.LoginPage | Type '****' into input[data-qa='login-password']
+2026-09-25 01:10:30,890 | INFO    | framework.LoginPage | Click button[data-qa='login-button']
+2026-09-25 01:10:32,160 | INFO    | framework.HomePage | Click a[href='/logout']
+2026-09-25 01:10:33,256 | INFO    | framework.HomePage | Open https://automationexercise.com/
+2026-09-25 01:10:35,830 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:10:38,370 | INFO    | framework.LoginPage | Type 'capstone.71ffa082f1@example.com' into input[data-qa='login-email']
+2026-09-25 01:10:38,437 | INFO    | framework.LoginPage | Type '****' into input[data-qa='login-password']
+2026-09-25 01:10:38,543 | INFO    | framework.LoginPage | Click button[data-qa='login-button']
+2026-09-25 01:10:45,060 | INFO    | framework.HomePage | Click a[href='/delete_account']
+2026-09-25 01:10:46,725 | INFO    | framework.HomePage | Click a[data-qa='continue-button']
+2026-09-25 01:10:47,701 | INFO    | framework.tests | Deleted test account capstone.71ffa082f1@example.com
+2026-09-25 01:10:49,872 | INFO    | framework.tests | END   tests/test_login.py::test_valid_login_and_logout
+2026-09-25 01:10:49,873 | INFO    | framework.tests | START tests/test_search.py::test_product_search[top]
+2026-09-25 01:10:51,469 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:10:51,470 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-25 01:10:57,222 | INFO    | framework.SearchPage | Type 'top' into search_product
+2026-09-25 01:10:57,277 | INFO    | framework.SearchPage | Click submit_search
+2026-09-25 01:10:59,271 | INFO    | framework.SearchPage | Search returned 14 product(s)
+2026-09-25 01:11:01,388 | INFO    | framework.tests | END   tests/test_search.py::test_product_search[top]
+2026-09-25 01:11:01,389 | INFO    | framework.tests | START tests/test_search.py::test_product_search[dress]
+2026-09-25 01:11:02,738 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:11:02,740 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-25 01:11:06,956 | INFO    | framework.SearchPage | Type 'dress' into search_product
+2026-09-25 01:11:07,022 | INFO    | framework.SearchPage | Click submit_search
+2026-09-25 01:11:09,199 | INFO    | framework.SearchPage | Search returned 9 product(s)
+2026-09-25 01:11:11,306 | INFO    | framework.tests | END   tests/test_search.py::test_product_search[dress]
+2026-09-25 01:11:11,308 | INFO    | framework.tests | START tests/test_search.py::test_product_search[jeans]
+2026-09-25 01:11:12,666 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:11:12,668 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-25 01:11:17,554 | INFO    | framework.SearchPage | Type 'jeans' into search_product
+2026-09-25 01:11:17,644 | INFO    | framework.SearchPage | Click submit_search
+2026-09-25 01:11:19,754 | INFO    | framework.SearchPage | Search returned 3 product(s)
+2026-09-25 01:11:21,866 | INFO    | framework.tests | END   tests/test_search.py::test_product_search[jeans]
+2026-09-25 01:11:21,867 | INFO    | framework.tests | START tests/test_search.py::test_product_search[tshirt]
+2026-09-25 01:11:23,221 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:11:23,223 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-25 01:11:27,809 | INFO    | framework.SearchPage | Type 'tshirt' into search_product
+2026-09-25 01:11:27,878 | INFO    | framework.SearchPage | Click submit_search
+2026-09-25 01:11:30,023 | INFO    | framework.SearchPage | Search returned 6 product(s)
+2026-09-25 01:11:32,162 | INFO    | framework.tests | END   tests/test_search.py::test_product_search[tshirt]
+2026-09-25 01:11:32,163 | INFO    | framework.tests | START tests/test_search.py::test_product_search[xyzabc123nomatch]
+2026-09-25 01:11:33,537 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:11:33,538 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-25 01:11:38,313 | INFO    | framework.SearchPage | Type 'xyzabc123nomatch' into search_product
+2026-09-25 01:11:38,378 | INFO    | framework.SearchPage | Click submit_search
+2026-09-25 01:11:39,956 | INFO    | framework.SearchPage | Search returned 0 product(s)
+2026-09-25 01:11:42,063 | INFO    | framework.tests | END   tests/test_search.py::test_product_search[xyzabc123nomatch]
+2026-09-25 01:11:42,064 | INFO    | framework.tests | START tests/test_signup.py::test_new_user_signup_form[roya.man1005@gmail.com]
+2026-09-25 01:11:43,420 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:11:43,421 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:11:47,498 | INFO    | framework.LoginPage | Type 'Capstone Tester' into input[data-qa='signup-name']
+2026-09-25 01:11:47,555 | INFO    | framework.LoginPage | Type 'roya.man1005@gmail.com' into input[data-qa='signup-email']
+2026-09-25 01:11:47,603 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-25 01:11:50,373 | INFO    | framework.tests | END   tests/test_signup.py::test_new_user_signup_form[roya.man1005@gmail.com]
+2026-09-25 01:11:50,374 | INFO    | framework.tests | START tests/test_signup.py::test_duplicate_signup_shows_error
+2026-09-25 01:11:51,712 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:11:51,713 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:11:55,696 | INFO    | framework.LoginPage | Type 'Capstone Tester' into input[data-qa='signup-name']
+2026-09-25 01:11:55,753 | INFO    | framework.LoginPage | Type 'capstone.ddb8af93d1@example.com' into input[data-qa='signup-email']
+2026-09-25 01:11:55,815 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-25 01:11:57,143 | ERROR   | framework.tests | FAILED tests/test_signup.py::test_duplicate_signup_shows_error (setup) - screenshot: C:\Users\amanr\capstone-selenium-framework\screenshots\test_duplicate_signup_shows_error_20260925_011157.png
+2026-09-25 01:11:59,312 | INFO    | framework.tests | END   tests/test_signup.py::test_duplicate_signup_shows_error
+2026-09-25 01:11:59,314 | INFO    | framework.tests | START tests/test_signup.py::test_signup_validation[missing_name]
+2026-09-25 01:12:00,679 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:12:00,680 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:12:04,456 | INFO    | framework.LoginPage | Type '' into input[data-qa='signup-name']
+2026-09-25 01:12:04,482 | INFO    | framework.LoginPage | Type 'valid.user@example.com' into input[data-qa='signup-email']
+2026-09-25 01:12:04,531 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-25 01:12:06,718 | INFO    | framework.tests | END   tests/test_signup.py::test_signup_validation[missing_name]
+2026-09-25 01:12:06,719 | INFO    | framework.tests | START tests/test_signup.py::test_signup_validation[missing_email]
+2026-09-25 01:12:08,096 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:12:08,097 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:12:12,094 | INFO    | framework.LoginPage | Type 'Test User' into input[data-qa='signup-name']
+2026-09-25 01:12:12,153 | INFO    | framework.LoginPage | Type '' into input[data-qa='signup-email']
+2026-09-25 01:12:12,175 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-25 01:12:14,350 | INFO    | framework.tests | END   tests/test_signup.py::test_signup_validation[missing_email]
+2026-09-25 01:12:14,351 | INFO    | framework.tests | START tests/test_signup.py::test_signup_validation[invalid_email_no_at]
+2026-09-25 01:12:15,707 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:12:15,708 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:12:20,712 | INFO    | framework.LoginPage | Type 'Test User' into input[data-qa='signup-name']
+2026-09-25 01:12:20,769 | INFO    | framework.LoginPage | Type 'plainaddress' into input[data-qa='signup-email']
+2026-09-25 01:12:20,819 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-25 01:12:22,999 | INFO    | framework.tests | END   tests/test_signup.py::test_signup_validation[invalid_email_no_at]
+2026-09-25 01:12:23,000 | INFO    | framework.tests | START tests/test_signup.py::test_signup_validation[invalid_email_no_domain]
+2026-09-25 01:12:24,357 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:12:24,358 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:12:28,449 | INFO    | framework.LoginPage | Type 'Test User' into input[data-qa='signup-name']
+2026-09-25 01:12:28,518 | INFO    | framework.LoginPage | Type 'user@' into input[data-qa='signup-email']
+2026-09-25 01:12:28,568 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-25 01:12:30,757 | INFO    | framework.tests | END   tests/test_signup.py::test_signup_validation[invalid_email_no_domain]
+2026-09-25 01:16:54,790 | INFO    | framework.tests | START tests/test_login.py::test_login_page_loads
+2026-09-25 01:16:56,474 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:16:56,475 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:17:02,691 | INFO    | framework.tests | END   tests/test_login.py::test_login_page_loads
+2026-09-25 01:17:02,692 | INFO    | framework.tests | START tests/test_login.py::test_invalid_login_shows_error[wrong.user@example.com]
+2026-09-25 01:17:04,143 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:17:04,147 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:17:08,064 | INFO    | framework.LoginPage | Type 'wrong.user@example.com' into input[data-qa='login-email']
+2026-09-25 01:17:08,135 | INFO    | framework.LoginPage | Type '****' into input[data-qa='login-password']
+2026-09-25 01:17:08,185 | INFO    | framework.LoginPage | Click button[data-qa='login-button']
+2026-09-25 01:17:11,394 | INFO    | framework.tests | END   tests/test_login.py::test_invalid_login_shows_error[wrong.user@example.com]
+2026-09-25 01:17:11,395 | INFO    | framework.tests | START tests/test_login.py::test_invalid_login_shows_error[fake.person@test.com]
+2026-09-25 01:17:12,912 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:17:12,913 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:17:16,805 | INFO    | framework.LoginPage | Type 'fake.person@test.com' into input[data-qa='login-email']
+2026-09-25 01:17:16,862 | INFO    | framework.LoginPage | Type '****' into input[data-qa='login-password']
+2026-09-25 01:17:16,907 | INFO    | framework.LoginPage | Click button[data-qa='login-button']
+2026-09-25 01:17:19,576 | INFO    | framework.tests | END   tests/test_login.py::test_invalid_login_shows_error[fake.person@test.com]
+2026-09-25 01:17:19,578 | INFO    | framework.tests | START tests/test_login.py::test_valid_login_and_logout
+2026-09-25 01:17:20,938 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:17:20,938 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:17:24,944 | INFO    | framework.LoginPage | Type 'Capstone Tester' into input[data-qa='signup-name']
+2026-09-25 01:17:25,002 | INFO    | framework.LoginPage | Type 'capstone.2501c52c18@example.com' into input[data-qa='signup-email']
+2026-09-25 01:17:25,051 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-25 01:17:26,100 | INFO    | framework.SignupPage | Type '****' into password
+2026-09-25 01:17:26,281 | INFO    | framework.SignupPage | Type 'Capstone' into first_name
+2026-09-25 01:17:26,336 | INFO    | framework.SignupPage | Type 'Tester' into last_name
+2026-09-25 01:17:26,393 | INFO    | framework.SignupPage | Type '1 Test Street' into address1
+2026-09-25 01:17:26,499 | INFO    | framework.SignupPage | Type 'West Bengal' into state
+2026-09-25 01:17:26,555 | INFO    | framework.SignupPage | Type 'Kolkata' into city
+2026-09-25 01:17:26,617 | INFO    | framework.SignupPage | Type '700001' into zipcode
+2026-09-25 01:17:26,712 | INFO    | framework.SignupPage | Type '9999999999' into mobile_number
+2026-09-25 01:17:26,778 | INFO    | framework.SignupPage | Click button[data-qa='create-account']
+2026-09-25 01:17:27,946 | INFO    | framework.SignupPage | Click a[data-qa='continue-button']
+2026-09-25 01:17:28,693 | INFO    | framework.HomePage | Click a[href='/logout']
+2026-09-25 01:17:31,064 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:17:33,712 | INFO    | framework.LoginPage | Type 'capstone.2501c52c18@example.com' into input[data-qa='login-email']
+2026-09-25 01:17:33,777 | INFO    | framework.LoginPage | Type '****' into input[data-qa='login-password']
+2026-09-25 01:17:33,825 | INFO    | framework.LoginPage | Click button[data-qa='login-button']
+2026-09-25 01:17:34,985 | INFO    | framework.HomePage | Click a[href='/logout']
+2026-09-25 01:17:36,705 | INFO    | framework.HomePage | Open https://automationexercise.com/
+2026-09-25 01:17:39,445 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:17:42,183 | INFO    | framework.LoginPage | Type 'capstone.2501c52c18@example.com' into input[data-qa='login-email']
+2026-09-25 01:17:42,236 | INFO    | framework.LoginPage | Type '****' into input[data-qa='login-password']
+2026-09-25 01:17:42,283 | INFO    | framework.LoginPage | Click button[data-qa='login-button']
+2026-09-25 01:17:43,766 | INFO    | framework.HomePage | Click a[href='/delete_account']
+2026-09-25 01:17:44,668 | INFO    | framework.HomePage | Click a[data-qa='continue-button']
+2026-09-25 01:17:45,807 | INFO    | framework.tests | Deleted test account capstone.2501c52c18@example.com
+2026-09-25 01:17:47,958 | INFO    | framework.tests | END   tests/test_login.py::test_valid_login_and_logout
+2026-09-25 01:17:47,960 | INFO    | framework.tests | START tests/test_search.py::test_product_search[top]
+2026-09-25 01:17:49,428 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:17:49,430 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-25 01:17:53,203 | INFO    | framework.SearchPage | Type 'top' into search_product
+2026-09-25 01:17:53,257 | INFO    | framework.SearchPage | Click submit_search
+2026-09-25 01:17:55,351 | INFO    | framework.SearchPage | Search returned 14 product(s)
+2026-09-25 01:17:57,476 | INFO    | framework.tests | END   tests/test_search.py::test_product_search[top]
+2026-09-25 01:17:57,477 | INFO    | framework.tests | START tests/test_search.py::test_product_search[dress]
+2026-09-25 01:17:58,806 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:17:58,807 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-25 01:18:02,723 | INFO    | framework.SearchPage | Type 'dress' into search_product
+2026-09-25 01:18:02,788 | INFO    | framework.SearchPage | Click submit_search
+2026-09-25 01:18:05,445 | INFO    | framework.SearchPage | Search returned 9 product(s)
+2026-09-25 01:18:07,573 | INFO    | framework.tests | END   tests/test_search.py::test_product_search[dress]
+2026-09-25 01:18:07,574 | INFO    | framework.tests | START tests/test_search.py::test_product_search[jeans]
+2026-09-25 01:18:08,931 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:18:08,933 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-25 01:18:13,081 | INFO    | framework.SearchPage | Type 'jeans' into search_product
+2026-09-25 01:18:13,138 | INFO    | framework.SearchPage | Click submit_search
+2026-09-25 01:18:15,529 | INFO    | framework.SearchPage | Search returned 3 product(s)
+2026-09-25 01:18:17,650 | INFO    | framework.tests | END   tests/test_search.py::test_product_search[jeans]
+2026-09-25 01:18:17,651 | INFO    | framework.tests | START tests/test_search.py::test_product_search[tshirt]
+2026-09-25 01:18:19,015 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:18:19,016 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-25 01:18:22,993 | INFO    | framework.SearchPage | Type 'tshirt' into search_product
+2026-09-25 01:18:23,056 | INFO    | framework.SearchPage | Click submit_search
+2026-09-25 01:18:25,208 | INFO    | framework.SearchPage | Search returned 6 product(s)
+2026-09-25 01:18:27,347 | INFO    | framework.tests | END   tests/test_search.py::test_product_search[tshirt]
+2026-09-25 01:18:27,347 | INFO    | framework.tests | START tests/test_search.py::test_product_search[xyzabc123nomatch]
+2026-09-25 01:18:28,737 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:18:28,738 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-25 01:18:33,005 | INFO    | framework.SearchPage | Type 'xyzabc123nomatch' into search_product
+2026-09-25 01:18:33,068 | INFO    | framework.SearchPage | Click submit_search
+2026-09-25 01:18:35,246 | INFO    | framework.SearchPage | Search returned 0 product(s)
+2026-09-25 01:18:37,376 | INFO    | framework.tests | END   tests/test_search.py::test_product_search[xyzabc123nomatch]
+2026-09-25 01:18:37,381 | INFO    | framework.tests | START tests/test_signup.py::test_new_user_signup_form[roya.man1005@gmail.com]
+2026-09-25 01:18:38,739 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:18:38,740 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:18:42,901 | INFO    | framework.LoginPage | Type 'Capstone Tester' into input[data-qa='signup-name']
+2026-09-25 01:18:42,966 | INFO    | framework.LoginPage | Type 'roya.man1005@gmail.com' into input[data-qa='signup-email']
+2026-09-25 01:18:43,019 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-25 01:18:46,170 | INFO    | framework.tests | END   tests/test_signup.py::test_new_user_signup_form[roya.man1005@gmail.com]
+2026-09-25 01:18:46,171 | INFO    | framework.tests | START tests/test_signup.py::test_duplicate_signup_shows_error
+2026-09-25 01:18:47,542 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:18:47,542 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:18:50,878 | INFO    | framework.LoginPage | Type 'Capstone Tester' into input[data-qa='signup-name']
+2026-09-25 01:18:50,942 | INFO    | framework.LoginPage | Type 'capstone.c146c9d921@example.com' into input[data-qa='signup-email']
+2026-09-25 01:18:50,997 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-25 01:18:52,079 | INFO    | framework.SignupPage | Type '****' into password
+2026-09-25 01:18:52,263 | INFO    | framework.SignupPage | Type 'Capstone' into first_name
+2026-09-25 01:18:52,314 | INFO    | framework.SignupPage | Type 'Tester' into last_name
+2026-09-25 01:18:52,375 | INFO    | framework.SignupPage | Type '1 Test Street' into address1
+2026-09-25 01:18:52,478 | INFO    | framework.SignupPage | Type 'West Bengal' into state
+2026-09-25 01:18:52,544 | INFO    | framework.SignupPage | Type 'Kolkata' into city
+2026-09-25 01:18:52,601 | INFO    | framework.SignupPage | Type '700001' into zipcode
+2026-09-25 01:18:52,672 | INFO    | framework.SignupPage | Type '9999999999' into mobile_number
+2026-09-25 01:18:52,734 | INFO    | framework.SignupPage | Click button[data-qa='create-account']
+2026-09-25 01:18:54,019 | INFO    | framework.SignupPage | Click a[data-qa='continue-button']
+2026-09-25 01:18:54,839 | INFO    | framework.HomePage | Click a[href='/logout']
+2026-09-25 01:18:57,895 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:19:01,683 | INFO    | framework.LoginPage | Type 'Capstone Tester' into input[data-qa='signup-name']
+2026-09-25 01:19:01,736 | INFO    | framework.LoginPage | Type 'capstone.c146c9d921@example.com' into input[data-qa='signup-email']
+2026-09-25 01:19:01,790 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-25 01:19:02,432 | INFO    | framework.HomePage | Open https://automationexercise.com/
+2026-09-25 01:19:05,048 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:19:07,615 | INFO    | framework.LoginPage | Type 'capstone.c146c9d921@example.com' into input[data-qa='login-email']
+2026-09-25 01:19:07,674 | INFO    | framework.LoginPage | Type '****' into input[data-qa='login-password']
+2026-09-25 01:19:07,724 | INFO    | framework.LoginPage | Click button[data-qa='login-button']
+2026-09-25 01:19:08,952 | INFO    | framework.HomePage | Click a[href='/delete_account']
+2026-09-25 01:19:10,769 | INFO    | framework.HomePage | Click a[data-qa='continue-button']
+2026-09-25 01:19:11,401 | INFO    | framework.tests | Deleted test account capstone.c146c9d921@example.com
+2026-09-25 01:19:13,557 | INFO    | framework.tests | END   tests/test_signup.py::test_duplicate_signup_shows_error
+2026-09-25 01:19:13,558 | INFO    | framework.tests | START tests/test_signup.py::test_signup_validation[missing_name]
+2026-09-25 01:19:14,913 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:19:14,915 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:19:18,053 | INFO    | framework.LoginPage | Type '' into input[data-qa='signup-name']
+2026-09-25 01:19:18,091 | INFO    | framework.LoginPage | Type 'valid.user@example.com' into input[data-qa='signup-email']
+2026-09-25 01:19:18,153 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-25 01:19:20,391 | INFO    | framework.tests | END   tests/test_signup.py::test_signup_validation[missing_name]
+2026-09-25 01:19:20,392 | INFO    | framework.tests | START tests/test_signup.py::test_signup_validation[missing_email]
+2026-09-25 01:19:21,762 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:19:21,763 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:19:27,206 | INFO    | framework.LoginPage | Type 'Test User' into input[data-qa='signup-name']
+2026-09-25 01:19:27,304 | INFO    | framework.LoginPage | Type '' into input[data-qa='signup-email']
+2026-09-25 01:19:27,325 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-25 01:19:29,522 | INFO    | framework.tests | END   tests/test_signup.py::test_signup_validation[missing_email]
+2026-09-25 01:19:29,523 | INFO    | framework.tests | START tests/test_signup.py::test_signup_validation[invalid_email_no_at]
+2026-09-25 01:19:30,907 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:19:30,908 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:19:35,008 | INFO    | framework.LoginPage | Type 'Test User' into input[data-qa='signup-name']
+2026-09-25 01:19:35,063 | INFO    | framework.LoginPage | Type 'plainaddress' into input[data-qa='signup-email']
+2026-09-25 01:19:35,105 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-25 01:19:37,290 | INFO    | framework.tests | END   tests/test_signup.py::test_signup_validation[invalid_email_no_at]
+2026-09-25 01:19:37,291 | INFO    | framework.tests | START tests/test_signup.py::test_signup_validation[invalid_email_no_domain]
+2026-09-25 01:19:38,663 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-25 01:19:38,664 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-25 01:19:42,726 | INFO    | framework.LoginPage | Type 'Test User' into input[data-qa='signup-name']
+2026-09-25 01:19:42,790 | INFO    | framework.LoginPage | Type 'user@' into input[data-qa='signup-email']
+2026-09-25 01:19:42,842 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-25 01:19:45,039 | INFO    | framework.tests | END   tests/test_signup.py::test_signup_validation[invalid_email_no_domain]
+2026-09-26 00:26:40,554 | INFO    | framework.tests | START tests/test_login.py::test_login_page_loads
+2026-09-26 00:26:48,824 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-26 00:26:48,825 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-26 00:26:54,641 | INFO    | framework.tests | END   tests/test_login.py::test_login_page_loads
+2026-09-26 00:26:54,644 | INFO    | framework.tests | START tests/test_login.py::test_invalid_login_shows_error[wrong.user@example.com]
+2026-09-26 00:26:56,060 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-26 00:26:56,061 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-26 00:26:59,464 | INFO    | framework.LoginPage | Type 'wrong.user@example.com' into input[data-qa='login-email']
+2026-09-26 00:26:59,529 | INFO    | framework.LoginPage | Type '****' into input[data-qa='login-password']
+2026-09-26 00:26:59,576 | INFO    | framework.LoginPage | Click button[data-qa='login-button']
+2026-09-26 00:27:02,191 | INFO    | framework.tests | END   tests/test_login.py::test_invalid_login_shows_error[wrong.user@example.com]
+2026-09-26 00:27:02,192 | INFO    | framework.tests | START tests/test_login.py::test_invalid_login_shows_error[fake.person@test.com]
+2026-09-26 00:27:03,591 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-26 00:27:03,593 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-26 00:27:07,033 | INFO    | framework.LoginPage | Type 'fake.person@test.com' into input[data-qa='login-email']
+2026-09-26 00:27:07,107 | INFO    | framework.LoginPage | Type '****' into input[data-qa='login-password']
+2026-09-26 00:27:07,155 | INFO    | framework.LoginPage | Click button[data-qa='login-button']
+2026-09-26 00:27:09,967 | INFO    | framework.tests | END   tests/test_login.py::test_invalid_login_shows_error[fake.person@test.com]
+2026-09-26 00:27:09,968 | INFO    | framework.tests | START tests/test_login.py::test_valid_login_and_logout
+2026-09-26 00:27:11,365 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-26 00:27:11,366 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-26 00:27:14,790 | INFO    | framework.LoginPage | Type 'Capstone Tester' into input[data-qa='signup-name']
+2026-09-26 00:27:14,853 | INFO    | framework.LoginPage | Type 'capstone.f7bcb1f890@example.com' into input[data-qa='signup-email']
+2026-09-26 00:27:14,905 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-26 00:27:15,492 | INFO    | framework.SignupPage | Type '****' into password
+2026-09-26 00:27:15,671 | INFO    | framework.SignupPage | Type 'Capstone' into first_name
+2026-09-26 00:27:15,722 | INFO    | framework.SignupPage | Type 'Tester' into last_name
+2026-09-26 00:27:15,784 | INFO    | framework.SignupPage | Type '1 Test Street' into address1
+2026-09-26 00:27:15,900 | INFO    | framework.SignupPage | Type 'West Bengal' into state
+2026-09-26 00:27:15,979 | INFO    | framework.SignupPage | Type 'Kolkata' into city
+2026-09-26 00:27:16,046 | INFO    | framework.SignupPage | Type '700001' into zipcode
+2026-09-26 00:27:16,109 | INFO    | framework.SignupPage | Type '9999999999' into mobile_number
+2026-09-26 00:27:16,454 | INFO    | framework.SignupPage | Click button[data-qa='create-account']
+2026-09-26 00:27:17,847 | INFO    | framework.SignupPage | Click a[data-qa='continue-button']
+2026-09-26 00:27:18,471 | INFO    | framework.HomePage | Click a[href='/logout']
+2026-09-26 00:27:19,966 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-26 00:27:22,479 | INFO    | framework.LoginPage | Type 'capstone.f7bcb1f890@example.com' into input[data-qa='login-email']
+2026-09-26 00:27:22,539 | INFO    | framework.LoginPage | Type '****' into input[data-qa='login-password']
+2026-09-26 00:27:22,592 | INFO    | framework.LoginPage | Click button[data-qa='login-button']
+2026-09-26 00:27:23,782 | INFO    | framework.HomePage | Click a[href='/logout']
+2026-09-26 00:27:25,212 | INFO    | framework.HomePage | Open https://automationexercise.com/
+2026-09-26 00:27:27,797 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-26 00:27:30,274 | INFO    | framework.LoginPage | Type 'capstone.f7bcb1f890@example.com' into input[data-qa='login-email']
+2026-09-26 00:27:30,326 | INFO    | framework.LoginPage | Type '****' into input[data-qa='login-password']
+2026-09-26 00:27:30,372 | INFO    | framework.LoginPage | Click button[data-qa='login-button']
+2026-09-26 00:27:31,621 | INFO    | framework.HomePage | Click a[href='/delete_account']
+2026-09-26 00:27:32,416 | INFO    | framework.HomePage | Click a[data-qa='continue-button']
+2026-09-26 00:27:32,904 | INFO    | framework.tests | Deleted test account capstone.f7bcb1f890@example.com
+2026-09-26 00:27:35,049 | INFO    | framework.tests | END   tests/test_login.py::test_valid_login_and_logout
+2026-09-26 00:27:35,050 | INFO    | framework.tests | START tests/test_search.py::test_product_search[top]
+2026-09-26 00:27:36,434 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-26 00:27:36,434 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-26 00:27:40,067 | INFO    | framework.SearchPage | Type 'top' into search_product
+2026-09-26 00:27:40,131 | INFO    | framework.SearchPage | Click submit_search
+2026-09-26 00:27:41,849 | INFO    | framework.SearchPage | Search returned 14 product(s)
+2026-09-26 00:27:43,990 | INFO    | framework.tests | END   tests/test_search.py::test_product_search[top]
+2026-09-26 00:27:43,991 | INFO    | framework.tests | START tests/test_search.py::test_product_search[dress]
+2026-09-26 00:27:45,339 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-26 00:27:45,340 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-26 00:27:49,040 | INFO    | framework.SearchPage | Type 'dress' into search_product
+2026-09-26 00:27:49,113 | INFO    | framework.SearchPage | Click submit_search
+2026-09-26 00:27:50,770 | INFO    | framework.SearchPage | Search returned 9 product(s)
+2026-09-26 00:27:52,914 | INFO    | framework.tests | END   tests/test_search.py::test_product_search[dress]
+2026-09-26 00:27:52,915 | INFO    | framework.tests | START tests/test_search.py::test_product_search[jeans]
+2026-09-26 00:27:54,301 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-26 00:27:54,302 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-26 00:27:57,766 | INFO    | framework.SearchPage | Type 'jeans' into search_product
+2026-09-26 00:27:57,831 | INFO    | framework.SearchPage | Click submit_search
+2026-09-26 00:27:59,559 | INFO    | framework.SearchPage | Search returned 3 product(s)
+2026-09-26 00:28:01,698 | INFO    | framework.tests | END   tests/test_search.py::test_product_search[jeans]
+2026-09-26 00:28:01,699 | INFO    | framework.tests | START tests/test_search.py::test_product_search[tshirt]
+2026-09-26 00:28:03,072 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-26 00:28:03,075 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-26 00:28:06,661 | INFO    | framework.SearchPage | Type 'tshirt' into search_product
+2026-09-26 00:28:06,731 | INFO    | framework.SearchPage | Click submit_search
+2026-09-26 00:28:08,470 | INFO    | framework.SearchPage | Search returned 6 product(s)
+2026-09-26 00:28:10,623 | INFO    | framework.tests | END   tests/test_search.py::test_product_search[tshirt]
+2026-09-26 00:28:10,624 | INFO    | framework.tests | START tests/test_search.py::test_product_search[xyzabc123nomatch]
+2026-09-26 00:28:12,026 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-26 00:28:12,027 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-26 00:28:15,507 | INFO    | framework.SearchPage | Type 'xyzabc123nomatch' into search_product
+2026-09-26 00:28:15,575 | INFO    | framework.SearchPage | Click submit_search
+2026-09-26 00:28:17,110 | INFO    | framework.SearchPage | Search returned 0 product(s)
+2026-09-26 00:28:19,226 | INFO    | framework.tests | END   tests/test_search.py::test_product_search[xyzabc123nomatch]
+2026-09-26 00:28:19,227 | INFO    | framework.tests | START tests/test_signup.py::test_new_user_signup_form[roya.man1005@gmail.com]
+2026-09-26 00:28:20,849 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-26 00:28:20,850 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-26 00:28:24,336 | INFO    | framework.LoginPage | Type 'Capstone Tester' into input[data-qa='signup-name']
+2026-09-26 00:28:24,593 | INFO    | framework.LoginPage | Type 'roya.man1005@gmail.com' into input[data-qa='signup-email']
+2026-09-26 00:28:24,643 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-26 00:28:27,276 | INFO    | framework.tests | END   tests/test_signup.py::test_new_user_signup_form[roya.man1005@gmail.com]
+2026-09-26 00:28:27,277 | INFO    | framework.tests | START tests/test_signup.py::test_duplicate_signup_shows_error
+2026-09-26 00:28:28,851 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-26 00:28:28,852 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-26 00:28:32,396 | INFO    | framework.LoginPage | Type 'Capstone Tester' into input[data-qa='signup-name']
+2026-09-26 00:28:32,463 | INFO    | framework.LoginPage | Type 'capstone.2799b7a1b0@example.com' into input[data-qa='signup-email']
+2026-09-26 00:28:32,518 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-26 00:28:33,013 | INFO    | framework.SignupPage | Type '****' into password
+2026-09-26 00:28:33,199 | INFO    | framework.SignupPage | Type 'Capstone' into first_name
+2026-09-26 00:28:33,253 | INFO    | framework.SignupPage | Type 'Tester' into last_name
+2026-09-26 00:28:33,315 | INFO    | framework.SignupPage | Type '1 Test Street' into address1
+2026-09-26 00:28:33,424 | INFO    | framework.SignupPage | Type 'West Bengal' into state
+2026-09-26 00:28:33,483 | INFO    | framework.SignupPage | Type 'Kolkata' into city
+2026-09-26 00:28:33,546 | INFO    | framework.SignupPage | Type '700001' into zipcode
+2026-09-26 00:28:33,607 | INFO    | framework.SignupPage | Type '9999999999' into mobile_number
+2026-09-26 00:28:33,675 | INFO    | framework.SignupPage | Click button[data-qa='create-account']
+2026-09-26 00:28:34,985 | INFO    | framework.SignupPage | Click a[data-qa='continue-button']
+2026-09-26 00:28:35,626 | INFO    | framework.HomePage | Click a[href='/logout']
+2026-09-26 00:28:37,122 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-26 00:28:39,591 | INFO    | framework.LoginPage | Type 'Capstone Tester' into input[data-qa='signup-name']
+2026-09-26 00:28:39,667 | INFO    | framework.LoginPage | Type 'capstone.2799b7a1b0@example.com' into input[data-qa='signup-email']
+2026-09-26 00:28:39,730 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-26 00:28:40,197 | INFO    | framework.HomePage | Open https://automationexercise.com/
+2026-09-26 00:28:42,884 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-26 00:28:45,390 | INFO    | framework.LoginPage | Type 'capstone.2799b7a1b0@example.com' into input[data-qa='login-email']
+2026-09-26 00:28:45,446 | INFO    | framework.LoginPage | Type '****' into input[data-qa='login-password']
+2026-09-26 00:28:45,497 | INFO    | framework.LoginPage | Click button[data-qa='login-button']
+2026-09-26 00:28:46,569 | INFO    | framework.HomePage | Click a[href='/delete_account']
+2026-09-26 00:28:47,069 | INFO    | framework.HomePage | Click a[data-qa='continue-button']
+2026-09-26 00:28:47,513 | INFO    | framework.tests | Deleted test account capstone.2799b7a1b0@example.com
+2026-09-26 00:28:49,694 | INFO    | framework.tests | END   tests/test_signup.py::test_duplicate_signup_shows_error
+2026-09-26 00:28:49,695 | INFO    | framework.tests | START tests/test_signup.py::test_signup_validation[missing_name]
+2026-09-26 00:28:51,111 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-26 00:28:51,113 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-26 00:28:54,538 | INFO    | framework.LoginPage | Type '' into input[data-qa='signup-name']
+2026-09-26 00:28:54,575 | INFO    | framework.LoginPage | Type 'valid.user@example.com' into input[data-qa='signup-email']
+2026-09-26 00:28:54,631 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-26 00:28:56,828 | INFO    | framework.tests | END   tests/test_signup.py::test_signup_validation[missing_name]
+2026-09-26 00:28:56,829 | INFO    | framework.tests | START tests/test_signup.py::test_signup_validation[missing_email]
+2026-09-26 00:28:58,240 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-26 00:28:58,241 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-26 00:29:01,774 | INFO    | framework.LoginPage | Type 'Test User' into input[data-qa='signup-name']
+2026-09-26 00:29:01,835 | INFO    | framework.LoginPage | Type '' into input[data-qa='signup-email']
+2026-09-26 00:29:01,857 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-26 00:29:04,054 | INFO    | framework.tests | END   tests/test_signup.py::test_signup_validation[missing_email]
+2026-09-26 00:29:04,055 | INFO    | framework.tests | START tests/test_signup.py::test_signup_validation[invalid_email_no_at]
+2026-09-26 00:29:05,404 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-26 00:29:05,405 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-26 00:29:08,884 | INFO    | framework.LoginPage | Type 'Test User' into input[data-qa='signup-name']
+2026-09-26 00:29:08,950 | INFO    | framework.LoginPage | Type 'plainaddress' into input[data-qa='signup-email']
+2026-09-26 00:29:08,997 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-26 00:29:11,200 | INFO    | framework.tests | END   tests/test_signup.py::test_signup_validation[invalid_email_no_at]
+2026-09-26 00:29:11,201 | INFO    | framework.tests | START tests/test_signup.py::test_signup_validation[invalid_email_no_domain]
+2026-09-26 00:29:12,572 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-26 00:29:12,574 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-26 00:29:16,148 | INFO    | framework.LoginPage | Type 'Test User' into input[data-qa='signup-name']
+2026-09-26 00:29:16,215 | INFO    | framework.LoginPage | Type 'user@' into input[data-qa='signup-email']
+2026-09-26 00:29:16,259 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-26 00:29:18,464 | INFO    | framework.tests | END   tests/test_signup.py::test_signup_validation[invalid_email_no_domain]
+2026-09-26 00:31:33,319 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-26 00:31:33,319 | INFO    | framework.unittest | START legacy_unittest.test_login_unittest.LoginUnittest.test_invalid_login_shows_error
+2026-09-26 00:31:33,320 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-26 00:31:37,194 | INFO    | framework.LoginPage | Type 'wrong.user@example.com' into input[data-qa='login-email']
+2026-09-26 00:31:37,267 | INFO    | framework.LoginPage | Type '****' into input[data-qa='login-password']
+2026-09-26 00:31:37,319 | INFO    | framework.LoginPage | Click button[data-qa='login-button']
+2026-09-26 00:31:38,324 | INFO    | framework.unittest | END   legacy_unittest.test_login_unittest.LoginUnittest.test_invalid_login_shows_error
+2026-09-26 00:31:38,324 | INFO    | framework.unittest | START legacy_unittest.test_login_unittest.LoginUnittest.test_login_page_loads
+2026-09-26 00:31:38,325 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-26 00:31:41,736 | INFO    | framework.unittest | END   legacy_unittest.test_login_unittest.LoginUnittest.test_login_page_loads
+2026-09-26 00:31:45,464 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-26 00:31:45,464 | INFO    | framework.unittest | START legacy_unittest.test_search_unittest.SearchUnittest.test_search_returns_results
+2026-09-26 00:31:45,464 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-26 00:31:49,695 | INFO    | framework.SearchPage | Type 'top' into search_product
+2026-09-26 00:31:49,762 | INFO    | framework.SearchPage | Click submit_search
+2026-09-26 00:31:51,492 | INFO    | framework.SearchPage | Search returned 14 product(s)
+2026-09-26 00:31:51,492 | INFO    | framework.unittest | END   legacy_unittest.test_search_unittest.SearchUnittest.test_search_returns_results
+2026-09-26 00:31:51,492 | INFO    | framework.unittest | START legacy_unittest.test_search_unittest.SearchUnittest.test_search_with_no_match_returns_zero
+2026-09-26 00:31:51,493 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-26 00:31:54,179 | INFO    | framework.SearchPage | Type 'xyzabc123nomatch' into search_product
+2026-09-26 00:31:54,234 | INFO    | framework.SearchPage | Click submit_search
+2026-09-26 00:31:56,007 | INFO    | framework.SearchPage | Search returned 0 product(s)
+2026-09-26 00:31:56,007 | INFO    | framework.unittest | END   legacy_unittest.test_search_unittest.SearchUnittest.test_search_with_no_match_returns_zero
+2026-09-26 15:55:19,325 | INFO    | framework.tests | START tests/test_login.py::test_login_page_loads
+2026-09-26 15:55:21,861 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-26 15:55:21,864 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-26 15:55:28,385 | INFO    | framework.tests | END   tests/test_login.py::test_login_page_loads
+2026-09-26 15:55:28,387 | INFO    | framework.tests | START tests/test_login.py::test_invalid_login_shows_error[wrong.user@example.com]
+2026-09-26 15:55:29,944 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-26 15:55:29,946 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-26 15:55:34,366 | INFO    | framework.LoginPage | Type 'wrong.user@example.com' into input[data-qa='login-email']
+2026-09-26 15:55:34,467 | INFO    | framework.LoginPage | Type '****' into input[data-qa='login-password']
+2026-09-26 15:55:34,579 | INFO    | framework.LoginPage | Click button[data-qa='login-button']
+2026-09-26 15:55:37,804 | INFO    | framework.tests | END   tests/test_login.py::test_invalid_login_shows_error[wrong.user@example.com]
+2026-09-26 15:55:37,805 | INFO    | framework.tests | START tests/test_login.py::test_invalid_login_shows_error[fake.person@test.com]
+2026-09-26 15:55:39,420 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-26 15:55:39,421 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-26 15:55:43,117 | INFO    | framework.LoginPage | Type 'fake.person@test.com' into input[data-qa='login-email']
+2026-09-26 15:55:43,190 | INFO    | framework.LoginPage | Type '****' into input[data-qa='login-password']
+2026-09-26 15:55:43,244 | INFO    | framework.LoginPage | Click button[data-qa='login-button']
+2026-09-26 15:55:46,478 | INFO    | framework.tests | END   tests/test_login.py::test_invalid_login_shows_error[fake.person@test.com]
+2026-09-26 15:55:46,479 | INFO    | framework.tests | START tests/test_login.py::test_valid_login_and_logout
+2026-09-26 15:55:47,961 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-26 15:55:47,962 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-26 15:55:51,426 | INFO    | framework.LoginPage | Type 'Capstone Tester' into input[data-qa='signup-name']
+2026-09-26 15:55:51,517 | INFO    | framework.LoginPage | Type 'capstone.d6e63bf962@example.com' into input[data-qa='signup-email']
+2026-09-26 15:55:51,592 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-26 15:55:52,745 | INFO    | framework.SignupPage | Type '****' into password
+2026-09-26 15:55:53,033 | INFO    | framework.SignupPage | Type 'Capstone' into first_name
+2026-09-26 15:55:53,134 | INFO    | framework.SignupPage | Type 'Tester' into last_name
+2026-09-26 15:55:53,243 | INFO    | framework.SignupPage | Type '1 Test Street' into address1
+2026-09-26 15:55:53,509 | INFO    | framework.SignupPage | Type 'West Bengal' into state
+2026-09-26 15:55:53,627 | INFO    | framework.SignupPage | Type 'Kolkata' into city
+2026-09-26 15:55:53,693 | INFO    | framework.SignupPage | Type '700001' into zipcode
+2026-09-26 15:55:54,007 | INFO    | framework.SignupPage | Type '9999999999' into mobile_number
+2026-09-26 15:55:54,147 | INFO    | framework.SignupPage | Click button[data-qa='create-account']
+2026-09-26 15:55:55,640 | INFO    | framework.SignupPage | Click a[data-qa='continue-button']
+2026-09-26 15:55:56,551 | INFO    | framework.HomePage | Click a[href='/logout']
+2026-09-26 15:55:58,135 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-26 15:56:00,716 | INFO    | framework.LoginPage | Type 'capstone.d6e63bf962@example.com' into input[data-qa='login-email']
+2026-09-26 15:56:00,810 | INFO    | framework.LoginPage | Type '****' into input[data-qa='login-password']
+2026-09-26 15:56:00,901 | INFO    | framework.LoginPage | Click button[data-qa='login-button']
+2026-09-26 15:56:02,741 | INFO    | framework.HomePage | Click a[href='/logout']
+2026-09-26 15:56:05,301 | INFO    | framework.HomePage | Open https://automationexercise.com/
+2026-09-26 15:56:07,873 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-26 15:56:10,572 | INFO    | framework.LoginPage | Type 'capstone.d6e63bf962@example.com' into input[data-qa='login-email']
+2026-09-26 15:56:10,660 | INFO    | framework.LoginPage | Type '****' into input[data-qa='login-password']
+2026-09-26 15:56:10,867 | INFO    | framework.LoginPage | Click button[data-qa='login-button']
+2026-09-26 15:56:12,307 | INFO    | framework.HomePage | Click a[href='/delete_account']
+2026-09-26 15:56:12,906 | INFO    | framework.HomePage | Click a[data-qa='continue-button']
+2026-09-26 15:56:13,571 | INFO    | framework.tests | Deleted test account capstone.d6e63bf962@example.com
+2026-09-26 15:56:15,761 | INFO    | framework.tests | END   tests/test_login.py::test_valid_login_and_logout
+2026-09-26 15:56:15,763 | INFO    | framework.tests | START tests/test_search.py::test_product_search[top]
+2026-09-26 15:56:17,239 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-26 15:56:17,240 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-26 15:56:24,601 | INFO    | framework.SearchPage | Type 'top' into search_product
+2026-09-26 15:56:24,685 | INFO    | framework.SearchPage | Click submit_search
+2026-09-26 15:56:26,488 | INFO    | framework.SearchPage | Search returned 14 product(s)
+2026-09-26 15:56:28,645 | INFO    | framework.tests | END   tests/test_search.py::test_product_search[top]
+2026-09-26 15:56:28,648 | INFO    | framework.tests | START tests/test_search.py::test_product_search[dress]
+2026-09-26 15:56:30,098 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-26 15:56:30,100 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-26 15:56:34,563 | INFO    | framework.SearchPage | Type 'dress' into search_product
+2026-09-26 15:56:34,648 | INFO    | framework.SearchPage | Click submit_search
+2026-09-26 15:56:36,316 | INFO    | framework.SearchPage | Search returned 9 product(s)
+2026-09-26 15:56:38,489 | INFO    | framework.tests | END   tests/test_search.py::test_product_search[dress]
+2026-09-26 15:56:38,490 | INFO    | framework.tests | START tests/test_search.py::test_product_search[jeans]
+2026-09-26 15:56:40,055 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-26 15:56:40,056 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-26 15:56:44,497 | INFO    | framework.SearchPage | Type 'jeans' into search_product
+2026-09-26 15:56:44,596 | INFO    | framework.SearchPage | Click submit_search
+2026-09-26 15:56:46,782 | INFO    | framework.SearchPage | Search returned 3 product(s)
+2026-09-26 15:56:48,948 | INFO    | framework.tests | END   tests/test_search.py::test_product_search[jeans]
+2026-09-26 15:56:48,949 | INFO    | framework.tests | START tests/test_search.py::test_product_search[tshirt]
+2026-09-26 15:56:50,391 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-26 15:56:50,394 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-26 15:56:54,824 | INFO    | framework.SearchPage | Type 'tshirt' into search_product
+2026-09-26 15:56:54,950 | INFO    | framework.SearchPage | Click submit_search
+2026-09-26 15:56:56,653 | INFO    | framework.SearchPage | Search returned 6 product(s)
+2026-09-26 15:56:58,816 | INFO    | framework.tests | END   tests/test_search.py::test_product_search[tshirt]
+2026-09-26 15:56:58,817 | INFO    | framework.tests | START tests/test_search.py::test_product_search[xyzabc123nomatch]
+2026-09-26 15:57:00,294 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-26 15:57:00,295 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-26 15:57:04,855 | INFO    | framework.SearchPage | Type 'xyzabc123nomatch' into search_product
+2026-09-26 15:57:04,979 | INFO    | framework.SearchPage | Click submit_search
+2026-09-26 15:57:06,767 | INFO    | framework.SearchPage | Search returned 0 product(s)
+2026-09-26 15:57:08,954 | INFO    | framework.tests | END   tests/test_search.py::test_product_search[xyzabc123nomatch]
+2026-09-26 15:57:08,956 | INFO    | framework.tests | START tests/test_signup.py::test_new_user_signup_form[roya.man1005@gmail.com]
+2026-09-26 15:57:10,396 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-26 15:57:10,397 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-26 15:57:14,733 | INFO    | framework.LoginPage | Type 'Capstone Tester' into input[data-qa='signup-name']
+2026-09-26 15:57:14,821 | INFO    | framework.LoginPage | Type 'roya.man1005@gmail.com' into input[data-qa='signup-email']
+2026-09-26 15:57:14,885 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-26 15:57:18,169 | INFO    | framework.tests | END   tests/test_signup.py::test_new_user_signup_form[roya.man1005@gmail.com]
+2026-09-26 15:57:18,170 | INFO    | framework.tests | START tests/test_signup.py::test_duplicate_signup_shows_error
+2026-09-26 15:57:19,600 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-26 15:57:19,601 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-26 15:57:24,011 | INFO    | framework.LoginPage | Type 'Capstone Tester' into input[data-qa='signup-name']
+2026-09-26 15:57:24,102 | INFO    | framework.LoginPage | Type 'capstone.7db79f3e02@example.com' into input[data-qa='signup-email']
+2026-09-26 15:57:24,182 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-26 15:57:25,349 | INFO    | framework.SignupPage | Type '****' into password
+2026-09-26 15:57:25,651 | INFO    | framework.SignupPage | Type 'Capstone' into first_name
+2026-09-26 15:57:25,747 | INFO    | framework.SignupPage | Type 'Tester' into last_name
+2026-09-26 15:57:25,864 | INFO    | framework.SignupPage | Type '1 Test Street' into address1
+2026-09-26 15:57:26,120 | INFO    | framework.SignupPage | Type 'West Bengal' into state
+2026-09-26 15:57:26,216 | INFO    | framework.SignupPage | Type 'Kolkata' into city
+2026-09-26 15:57:26,406 | INFO    | framework.SignupPage | Type '700001' into zipcode
+2026-09-26 15:57:26,518 | INFO    | framework.SignupPage | Type '9999999999' into mobile_number
+2026-09-26 15:57:26,633 | INFO    | framework.SignupPage | Click button[data-qa='create-account']
+2026-09-26 15:57:28,563 | INFO    | framework.SignupPage | Click a[data-qa='continue-button']
+2026-09-26 15:57:29,386 | INFO    | framework.HomePage | Click a[href='/logout']
+2026-09-26 15:57:30,501 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-26 15:57:33,332 | INFO    | framework.LoginPage | Type 'Capstone Tester' into input[data-qa='signup-name']
+2026-09-26 15:57:33,412 | INFO    | framework.LoginPage | Type 'capstone.7db79f3e02@example.com' into input[data-qa='signup-email']
+2026-09-26 15:57:33,484 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-26 15:57:34,353 | INFO    | framework.HomePage | Open https://automationexercise.com/
+2026-09-26 15:57:36,996 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-26 15:57:39,871 | INFO    | framework.LoginPage | Type 'capstone.7db79f3e02@example.com' into input[data-qa='login-email']
+2026-09-26 15:57:39,963 | INFO    | framework.LoginPage | Type '****' into input[data-qa='login-password']
+2026-09-26 15:57:40,037 | INFO    | framework.LoginPage | Click button[data-qa='login-button']
+2026-09-26 15:57:41,530 | INFO    | framework.HomePage | Click a[href='/delete_account']
+2026-09-26 15:57:42,266 | INFO    | framework.HomePage | Click a[data-qa='continue-button']
+2026-09-26 15:57:42,972 | INFO    | framework.tests | Deleted test account capstone.7db79f3e02@example.com
+2026-09-26 15:57:45,163 | INFO    | framework.tests | END   tests/test_signup.py::test_duplicate_signup_shows_error
+2026-09-26 15:57:45,164 | INFO    | framework.tests | START tests/test_signup.py::test_signup_validation[missing_name]
+2026-09-26 15:57:46,755 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-26 15:57:46,757 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-26 15:57:50,602 | INFO    | framework.LoginPage | Type '' into input[data-qa='signup-name']
+2026-09-26 15:57:50,632 | INFO    | framework.LoginPage | Type 'valid.user@example.com' into input[data-qa='signup-email']
+2026-09-26 15:57:50,714 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-26 15:57:52,961 | INFO    | framework.tests | END   tests/test_signup.py::test_signup_validation[missing_name]
+2026-09-26 15:57:52,963 | INFO    | framework.tests | START tests/test_signup.py::test_signup_validation[missing_email]
+2026-09-26 15:57:54,543 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-26 15:57:54,544 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-26 15:57:59,008 | INFO    | framework.LoginPage | Type 'Test User' into input[data-qa='signup-name']
+2026-09-26 15:57:59,099 | INFO    | framework.LoginPage | Type '' into input[data-qa='signup-email']
+2026-09-26 15:57:59,135 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-26 15:58:01,395 | INFO    | framework.tests | END   tests/test_signup.py::test_signup_validation[missing_email]
+2026-09-26 15:58:01,396 | INFO    | framework.tests | START tests/test_signup.py::test_signup_validation[invalid_email_no_at]
+2026-09-26 15:58:02,969 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-26 15:58:02,971 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-26 15:58:06,876 | INFO    | framework.LoginPage | Type 'Test User' into input[data-qa='signup-name']
+2026-09-26 15:58:07,001 | INFO    | framework.LoginPage | Type 'plainaddress' into input[data-qa='signup-email']
+2026-09-26 15:58:07,067 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-26 15:58:09,313 | INFO    | framework.tests | END   tests/test_signup.py::test_signup_validation[invalid_email_no_at]
+2026-09-26 15:58:09,314 | INFO    | framework.tests | START tests/test_signup.py::test_signup_validation[invalid_email_no_domain]
+2026-09-26 15:58:10,831 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-26 15:58:10,833 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-26 15:58:15,010 | INFO    | framework.LoginPage | Type 'Test User' into input[data-qa='signup-name']
+2026-09-26 15:58:15,093 | INFO    | framework.LoginPage | Type 'user@' into input[data-qa='signup-email']
+2026-09-26 15:58:15,211 | INFO    | framework.LoginPage | Click button[data-qa='signup-button']
+2026-09-26 15:58:17,472 | INFO    | framework.tests | END   tests/test_signup.py::test_signup_validation[invalid_email_no_domain]
+2026-09-26 16:03:00,614 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-26 16:03:00,614 | INFO    | framework.unittest | START legacy_unittest.test_login_unittest.LoginUnittest.test_invalid_login_shows_error
+2026-09-26 16:03:00,615 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-26 16:03:04,865 | INFO    | framework.LoginPage | Type 'wrong.user@example.com' into input[data-qa='login-email']
+2026-09-26 16:03:04,945 | INFO    | framework.LoginPage | Type '****' into input[data-qa='login-password']
+2026-09-26 16:03:05,006 | INFO    | framework.LoginPage | Click button[data-qa='login-button']
+2026-09-26 16:03:05,591 | INFO    | framework.unittest | END   legacy_unittest.test_login_unittest.LoginUnittest.test_invalid_login_shows_error
+2026-09-26 16:03:05,591 | INFO    | framework.unittest | START legacy_unittest.test_login_unittest.LoginUnittest.test_login_page_loads
+2026-09-26 16:03:05,591 | INFO    | framework.LoginPage | Open https://automationexercise.com/login
+2026-09-26 16:03:08,151 | INFO    | framework.unittest | END   legacy_unittest.test_login_unittest.LoginUnittest.test_login_page_loads
+2026-09-26 16:03:11,931 | INFO    | framework.driver | Started chrome (headless=False)
+2026-09-26 16:03:11,931 | INFO    | framework.unittest | START legacy_unittest.test_search_unittest.SearchUnittest.test_search_returns_results
+2026-09-26 16:03:11,932 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-26 16:03:16,374 | INFO    | framework.SearchPage | Type 'top' into search_product
+2026-09-26 16:03:16,468 | INFO    | framework.SearchPage | Click submit_search
+2026-09-26 16:03:18,874 | INFO    | framework.SearchPage | Search returned 14 product(s)
+2026-09-26 16:03:18,874 | INFO    | framework.unittest | END   legacy_unittest.test_search_unittest.SearchUnittest.test_search_returns_results
+2026-09-26 16:03:18,875 | INFO    | framework.unittest | START legacy_unittest.test_search_unittest.SearchUnittest.test_search_with_no_match_returns_zero
+2026-09-26 16:03:18,875 | INFO    | framework.SearchPage | Open https://automationexercise.com/products
+2026-09-26 16:03:21,525 | INFO    | framework.SearchPage | Type 'xyzabc123nomatch' into search_product
+2026-09-26 16:03:21,615 | INFO    | framework.SearchPage | Click submit_search
+2026-09-26 16:03:23,280 | INFO    | framework.SearchPage | Search returned 0 product(s)
+2026-09-26 16:03:23,281 | INFO    | framework.unittest | END   legacy_unittest.test_search_unittest.SearchUnittest.test_search_with_no_match_returns_zero
