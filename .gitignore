@@ -11,3 +11,5 @@ logs/*
 !logs/.gitkeep
 .idea/
 .vscode/
+
+Capstone Project/Video/*.mp4
